@@ -1,5 +1,8 @@
 import React from 'react';
-import Plot from 'react-plotly.js';
+import createPlotlyComponent from 'react-plotly.js/factory';
+import Plotly from 'plotly.js-basic-dist-min'
+const Plot = createPlotlyComponent(Plotly);
+
 const Data = require('../data/data.json')
 let field = [];
 let y1 = [];
