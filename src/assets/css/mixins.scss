@@ -1,0 +1,6 @@
+
+@mixin fit($width) {
+    @media (max-width: $width){
+        @content
+    }
+}

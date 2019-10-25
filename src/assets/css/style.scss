@@ -1,0 +1,16 @@
+@import './__landing-page.scss';
+@import './__charts.scss';
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f2d0 ;
+    font-size: 62.5%;
+}
+
+section{
+    height: 100vh;
+    border-top: #b1ae95 solid 3px;
+}

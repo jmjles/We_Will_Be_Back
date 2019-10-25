@@ -1,0 +1,63 @@
+@import './mixins.scss';
+.completeCenter{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-40%);
+    text-align: center;
+    padding: 2rem;
+    width:50%;
+    @include fit (950px){
+        width: 75%;
+    }
+    h1{
+        font-size: 4rem;
+        font-family: 'Gloria Hallelujah', cursive;
+        @include fit(950px){
+            font-size: 3rem;
+        }
+        @include fit (500px){
+            font-size: 2rem;
+        }
+    }
+    p,a{
+        font-size:2rem;
+        @include fit(950px){
+            font-size: 1.5rem;
+        }
+        @include fit (500px){
+            font-size: 1rem;
+        }
+    }
+}
+#lines{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width:100%;
+    height: 100vh;
+
+    path{
+        fill:#f5f2d0;
+        stroke:#b1ae95;
+        stroke-width: 3;
+    }
+}
+#learnMore{
+    text-decoration: none;
+    color:black;
+    padding: .5rem 2rem;
+    background-color: #f8f6dd;
+    border: #b1ae95 solid 1px;
+    border-radius: 15px;
+}
+.background{
+    top:0;
+    left:0;
+    position: absolute;
+    z-index: -99;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+}
